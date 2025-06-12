@@ -12,3 +12,8 @@ export const createUser = async (email: string) => {
   const newUser = await usersCollection.add({ email });
   return { id: newUser.id, email };
 };
+
+export const findUserById = async (id: string): Promise<boolean> => {
+  const doc = await usersCollection.doc(id).get();
+  return doc.exists;
+};

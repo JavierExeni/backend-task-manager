@@ -20,3 +20,8 @@ export const updateTask = async (id: string, updates: Partial<Task>) => {
 export const deleteTask = async (id: string) => {
   await tasksCollection.doc(id).delete();
 };
+
+export const findTaskById = async (id: string): Promise<boolean> => {
+  const doc = await tasksCollection.doc(id).get();
+  return doc.exists;
+};

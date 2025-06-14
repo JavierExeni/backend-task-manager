@@ -6,3 +6,9 @@ export interface Task {
   completed: boolean;
   userId: string;
 }
+
+export interface FilterTask {
+  userId: string;
+  title?: string;
+  completed?: boolean;
+}

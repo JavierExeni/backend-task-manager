@@ -9,20 +9,20 @@ Prueba técnica para la empresa ATOM en la cual se desarrollo una API REST para 
 
 ## 🔗 Enlaces
 - **Frontend**: [Repositorio Frontend](https://github.com/JavierExeni/frontend-task-manager)
-- **Demo**: [https://task-manager-challenge.web.app](https://task-manager-challenge.web.app)
+- **Demo**: [https://task-manager-challenge.web.app](https://task-manager-70d7a.web.app/login)
 
 # 📡 API Endpoints Documentation
 
 ## 🔐 User Routes
-`https://your-api-domain.com/api/users`
+`https://your-api-domain.com/users`
 
 | Método | Endpoint          | Descripción                          | Middlewares Aplicados               |
 |--------|-------------------|--------------------------------------|-------------------------------------|
-| `GET`  | `/api/users/:email` | Obtiene un usuario por email         | -                                   |
-| `POST` | `/api/users/`      | Registra un nuevo usuario            | `validateEmail`, `handleValidation` |
+| `GET`  | `/users/:email`   | Obtiene un usuario por email         | -                                   |
+| `POST` | `/users/`         | Registra un nuevo usuario            | `validateEmail`, `handleValidation` |
 
 ## 📝 Task Routes 
-`https://your-api-domain.com/api/tasks`
+`https://your-api-domain.com/tasks`
 
 ## 📋 Available Endpoints
 
